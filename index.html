@@ -10,7 +10,9 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+    
     <title>vanilla-weather-app</title>
   </head>
   <body>
@@ -18,10 +20,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-          <h1>New York</h1>
+          <h1 id="city"></h1>
           <ul>
             <li>Monday 07:00</li>
-            <li>Mostly cloudy</li>
+            <li id="description"></li>
           </ul>
           </div>
           <div class="row">
@@ -33,15 +35,16 @@
                   alt="clear"
                   id="icon"
                 />
-                <strong id="temperature">8 </strong
+                <strong id="temperature"> </strong
                 ><span class="units">°C| <a href="#">°F</a></span>
               </div>
             </div>
             <div class="col-6">
               <ul>
                 <li>Precipitation: 3%</li>
-                <li>Humidity: 82%</li>
-                <li>Wind: 7 mph</li>
+                <li>Humidity: <span id="humidity"> </span>%</li>
+                
+                <li>Wind: <span id="wind"> </span> m/ph</li>
               </ul>
             </div>
           </div>
