@@ -23,10 +23,22 @@ li {
   font-weight: 400;
   line-height: 18px;
 }
+.weather-app-wrapper {max-width: 600px;
+  margin: 30px auto;}
 .weather-app {
-  max-width: 600px;
-  margin: 30px auto;
   padding: 20px;
   border-radius: 5px;
   border: 1px solid #8c9094;
+}
+.overview{margin-bottom: 20px;}
+.weather-temperature img {margin-right: 10px;
+height:64px;
+width: 64px;}
+#temperature {color: rgb(32, 33, 36);
+font-weight: 400;
+font-size: 60px;
+line-height: 1;
+}
+.weather-temperature .units {position:relative;
+font-size: 16px;
 }
